@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "891545925613",
+    "firebase_url": "https://ahora-sii.firebaseio.com",
+    "project_id": "ahora-sii",
+    "storage_bucket": "ahora-sii.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:891545925613:android:c53c61e89860e49d",
+        "android_client_info": {
+          "package_name": "com.example.mac.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "891545925613-ej8j3oq2u3lobsk1f2q13alb6gj39fae.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXXz_efarZbbfR8OkOC8lKy7OCddVfbfQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:891545925613:android:886c2e7bdc1f7862",
+        "android_client_info": {
+          "package_name": "com.example.mac.proyectobeta1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "891545925613-ej8j3oq2u3lobsk1f2q13alb6gj39fae.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXXz_efarZbbfR8OkOC8lKy7OCddVfbfQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
