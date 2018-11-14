@@ -1,5 +1,6 @@
 package com.example.mac.proyectobeta1;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,12 +34,38 @@ public class MainActivity extends AppCompatActivity {
         mPasswordField = (EditText) findViewById(R.id.password);
         mAuth = FirebaseAuth.getInstance();
         mLoginbtn = (Button) findViewById(R.id.login);
+        mAuthListener = new FirebaseAuth.AuthStateListener() {
+            @Override
+            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+
+
+                if(firebaseAuth.getCurrentUser()!=null){
+
+
+                }
+                else{
+                    //Toast.makeText(MainActivity.this,"Datos Inrrectos", Toast.LENGTH_SHORT).show();
+            }
+
+        }
+        };
         mLoginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
+            
             public void onClick(View v) {
+                LogearUsuario();
 
             }
         });
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        mAuth.addAuthStateListener(mAuthListener);
+        // Check if user is signed in (non-null) and update UI accordingly.
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+
     }
 
     private void LogearUsuario() {
